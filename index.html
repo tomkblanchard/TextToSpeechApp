@@ -1,0 +1,55 @@
+<html lang="en" class="js-focus-visible" data-js-focus-visible="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Text To Speech App</title>
+</head>
+
+<body>
+  <div id="outer-container">
+    <div class="container">
+      <div class="banner" id="first-img">
+        <img src="images/black-bg-2.png" alt="" class="w-100">
+      </div>
+    </div>
+    <div class="content-container">
+      <form class="form-container">
+        <div class="form-group">
+          <textarea name="text-box" id="text-input"
+            placeholder="Type anything..."></textarea>
+        </div>
+        <div class="content-container">
+            <div class="form-group">
+              <label for="volume">Volume</label>
+              <div id="volume-value" style="float: right;">1</div>
+              <div class="slider-container">
+                <input type="range" id="volume" class="slider" min="0" max="1" value="0.75" step="0.01">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="rate">Rate</label>
+              <div id="rate-value" style="float: right;">1</div>
+              <div class="slider-container">
+                <input type="range" id="rate" class="slider" min="0.5" max="2" value="1" step="0.1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="pitch">Pitch</label>
+              <div id="pitch-value" style="float: right;">1</div>
+              <input type="range" id="pitch" class="slider" min="0" max="2" value="1" step="0.1">
+            </div>
+          </div>
+        <div class="form-group">
+          <select id="voice-select"></select>
+        </div>
+        <button class="btn">Speak!</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
