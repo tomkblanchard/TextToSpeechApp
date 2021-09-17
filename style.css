@@ -21,14 +21,14 @@ body {
   align-items: center;
 }
 
-.container {
+.banner-container {
   position: relative;
   width: 100%;
   max-width: 600px;
 }
 
-/* Image with empty speach bubble */
-.container .banner img:nth-child(1){
+/* Image with empty speech bubble */
+.banner-container .banner img:nth-child(1){
   position: relative;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 /* Style for Gif to show inside speach bubble */
-.container .banner img:nth-child(2){
+.banner-container .banner img:nth-child(2){
   position: absolute;
   width: 45%;
   height: 40%;
@@ -58,6 +58,7 @@ body {
   margin: 1.2rem 0;
 }
 
+/* Text input field */
 .content-container .form-container .form-group #text-input {
   padding: 0.5rem;
   width: 100%;
@@ -66,6 +67,7 @@ body {
   letter-spacing: 1px;
 }
 
+/* Voice options */
 .form-group #voice-select {
   width: 100%;
   margin: 1rem 0;
@@ -89,11 +91,12 @@ body {
   transition: opacity .2s;
 }
 
-/* Mouse-over and focus effects */
+/* Mouse-over and focus effects on slider track */
 .slider:hover, .slider:focus {
   opacity: 1; 
 }
 
+/* Slider thumb */
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -106,6 +109,7 @@ body {
   transition: .2s;
 }
 
+/* Mouse-over and focus effects on slider thumb*/
 .slider::-webkit-slider-thumb:hover, .slider::-webkit-slider-thumb:focus {
   -webkit-appearance: none;
   appearance: none;
@@ -113,6 +117,7 @@ body {
   height: 30px;
 }
 
+/* Mozilla extension for slider thumb */
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
